@@ -22,7 +22,7 @@ This project is a re-written made in Laravel. See the original [React/Node versi
 
 <hr>
 
-## Tecns
+## Techs
 
 Fullstack:
 
