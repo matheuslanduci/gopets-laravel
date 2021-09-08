@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background: #151d28;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+// Stylizing the TippyJS tooltip.
+.tippy-box[data-theme~="main"] {
+  padding: 8px 12px;
+  background: #f50057;
+  font-size: 14px;
+}
+
+.tippy-box[data-theme~="main"][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #f50057;
+}
+.tippy-box[data-theme~="main"][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: #f50057;
+}
+.tippy-box[data-theme~="main"][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: #f50057;
+}
+.tippy-box[data-theme~="main"][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: #f50057;
+}

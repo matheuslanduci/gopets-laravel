@@ -1,0 +1,165 @@
+.form-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  .form-content {
+    display: flex;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .heading {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+
+    .form + .form {
+      margin-left: 16px;
+    }
+
+    .pet-name-input,
+    .owner-name-input {
+      width: 572px;
+    }
+
+    .pet-breed-input,
+    .owner-contact-input {
+      width: 474px;
+    }
+
+    .pet-age-input,
+    .pet-type-input {
+      width: 278px;
+    }
+  }
+
+  .row-buttons {
+    margin-top: 36px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    .base-button {
+      width: 180px;
+      height: 42px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: transparent;
+      border: 0;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+
+      &.back-button {
+        background: #2a3647;
+
+        &:focus,
+        &:hover {
+          background: #41536d;
+        }
+      }
+
+      &.clear-button {
+        background: #8399b7;
+
+        &:focus,
+        &:hover {
+          background: #bacde8;
+        }
+      }
+
+      &.save-button {
+        background: #f50057;
+
+        &:focus,
+        &:hover {
+          background: #ff4b8b;
+        }
+      }
+    }
+  }
+
+  .button-group {
+    display: flex;
+
+    button + button {
+      margin-left: 16px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .form-content {
+      flex-direction: column;
+    }
+
+    .form + .form {
+      margin-top: 16px;
+      margin-left: unset;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .row-buttons {
+      flex-direction: column-reverse;
+    }
+
+    .back-button {
+      margin-bottom: 32px;
+    }
+
+    .button-group {
+      margin-bottom: 32px;
+    }
+
+    .pet-name-input,
+    .owner-name-input {
+      width: 460px;
+    }
+
+    .pet-breed-input,
+    .owner-contact-input {
+      width: 420px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .pet-name-input,
+    .owner-name-input {
+      width: 400px;
+    }
+
+    .pet-breed-input,
+    .owner-contact-input {
+      width: 320px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    .pet-name-input,
+    .owner-name-input {
+      width: 320px;
+    }
+
+    .pet-breed-input,
+    .owner-contact-input {
+      width: 280px;
+    }
+  }
+}

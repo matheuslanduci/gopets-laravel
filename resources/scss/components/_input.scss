@@ -1,0 +1,38 @@
+.input-group {
+  margin-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  input,
+  select {
+    margin-top: 4px;
+    padding: 0 12px;
+
+    height: 42px;
+
+    background: #2a3647;
+    border: 2px solid #2a3647;
+    border-radius: 4px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+
+    &:focus {
+      border-color: #f50057;
+      outline: 0;
+    }
+  }
+
+  input::placeholder,
+  .invalid-select {
+    color: #959595;
+    font-style: italic;
+    font-weight: 300;
+  }
+}

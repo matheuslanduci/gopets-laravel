@@ -1,0 +1,14 @@
+// Importing global styles.
+@use "global";
+
+// Importing page-level styles.
+@use "pages/home";
+@use "pages/dashboard";
+@use "pages/newpet";
+@use "pages/updatepet";
+
+// Importing component-level styles.
+@use "components/header";
+@use "components/checkbox";
+@use "components/form";
+@use "components/input";
